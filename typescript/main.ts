@@ -23,9 +23,8 @@ class Calculator {
 let button = document.createElement('button');
 button.textContent = "Calculate";
 button.onclick = function() {
-
-	var n1 = (<HTMLInputElement>document.getElementById("num1")).value;
-	var n2 = (<HTMLInputElement>document.getElementById("num2")).value;
+    var n1 = (<HTMLInputElement>document.getElementById("num1")).value;
+    var n2 = (<HTMLInputElement>document.getElementById("num2")).value;
     var op = (<HTMLInputElement>document.getElementById("op")).value;
 
     let calc = new Calculator(+n1,+n2);
